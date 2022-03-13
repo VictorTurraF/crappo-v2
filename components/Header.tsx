@@ -8,7 +8,7 @@ import InlineMenuItem from "./InlineMenuItem";
 import Logo from "./Logo";
 
 const HeaderRow = styled.header`
-  padding: 3.75rem 0;
+  padding: 1.75rem 0;
 `;
 
 const ContainerRow = styled(Container)`
