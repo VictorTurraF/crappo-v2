@@ -1,10 +1,16 @@
-import styled from 'styled-components'
+import styled from "styled-components";
+import Header from "../components/Header";
 
-const Title = styled.h1`
-  color: red;
-  font-size: 50px;
-`
+const HomePage = styled.div`
+  background-color: #0d0d2b;
+  color: #fff;
+  min-height: 100vh;
+`;
 
 export default function Home() {
-  return <Title>My page</Title>
+  return (
+    <HomePage>
+      <Header />
+    </HomePage>
+  );
 }
