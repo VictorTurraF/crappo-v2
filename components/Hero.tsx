@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 import Button from "./Button";
-import Container from "./Container";
 import Offer from "./Offer";
 
 const HeroBox = styled.div`
   max-width: 588px;
+  padding: 2rem 0;
 `;
 
 const HeadLine = styled.h2`
@@ -34,29 +34,23 @@ const CTAButton = styled(Button)`
   padding: 1rem 1rem 1rem 1.75rem;
 `
 
-const HeroContainer = styled(Container)`
-  position: relative;
-  top: 48%;
-  transform: translateY(-50%);
-`
+
 
 function Hero() {
   return (
-    <HeroContainer>
-      <HeroBox>
-        <Offer />
-        <HeadLine>Fastest &amp; secure platform to invest in crypto</HeadLine>
-        <Supporting>
-          Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in
-          transactions.
-        </Supporting>
-        <CTA>
-          <CTAButton variant="primary" withArrowIcon>
-            Try for FREE
-          </CTAButton>
-        </CTA>
-      </HeroBox>
-    </HeroContainer>
+    <HeroBox>
+      <Offer />
+      <HeadLine>Fastest &amp; secure platform to invest in crypto</HeadLine>
+      <Supporting>
+        Buy and sell cryptocurrencies, trusted by 10M wallets with over $30 billion in
+        transactions.
+      </Supporting>
+      <CTA>
+        <CTAButton variant="primary" withArrowIcon>
+          Try for FREE
+        </CTAButton>
+      </CTA>
+    </HeroBox>
   );
 }
 

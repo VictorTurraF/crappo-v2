@@ -1,22 +1,26 @@
 import React from 'react'
 import styled from 'styled-components'
+import Container from './Container'
 import Hero from './Hero'
+import Illustration from './Illustration'
 
-const ContainerBox = styled.div`
+const SectionBox = styled.div`
   position: relative;
   flex: 1 0 0%;
 `
 
-const Ilustration = styled.div`
-  position: absolute;
+const HeroContainer = styled(Container)`
+  position: relative;
 `
 
 function LandingArea() {
   return (
-    <ContainerBox>
-      <Ilustration />
-      <Hero />
-    </ContainerBox>
+    <SectionBox>
+      <HeroContainer>
+        <Illustration />
+        <Hero />
+      </HeroContainer>
+    </SectionBox>
   )
 }
 
