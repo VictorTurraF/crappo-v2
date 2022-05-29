@@ -6,6 +6,7 @@ import DescriptionRow from "../components/DescriptionRow";
 import CenteredTitle from "../components/CenteredTitle";
 import CalculatorForm from "../components/CalculatorForm";
 import Showcase from "../components/Showcase";
+import InvestSmart from "../components/InvestSmart";
 
 const HomePage = styled.div`
   background-color: #0d0d2b;
@@ -67,6 +68,7 @@ export default function Home() {
       </ShowcaseSection>
       <MarketingSection>
         <CenteredTitle title="Market sentiments, portfolio, and run the infrastructure of your choice" />
+        <InvestSmart />
       </MarketingSection>
     </HomePage>
   );
