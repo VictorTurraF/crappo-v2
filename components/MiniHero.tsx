@@ -18,14 +18,14 @@ const CTA = styled(Button)`
   margin-top: 2rem;
 `
 
-export interface MiniHeroProps {
+export interface MiniHeroProps extends React.HTMLAttributes<HTMLDivElement> {
   title: string
   paragraph: string
 }
 
-function MiniHero({ title, paragraph }: MiniHeroProps) {
+function MiniHero({ className, title, paragraph }: MiniHeroProps) {
   return (
-    <Box>
+    <Box className={className}>
       <Title level="h3" theme="light">{title}</Title>
       <Paragraph>{paragraph}</Paragraph>
       <CTA>Learn More</CTA>
