@@ -23,11 +23,11 @@ const SubTitle = styled.p`
   margin: 0 auto;
 `
 
-function CenteredTitle() {
+function CenteredTitle({ title = '', subtitle = '', className = '' }) {
   return (
-    <Box>
-      <Title>Check how much you can earn</Title>
-      <SubTitle>Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet.</SubTitle>
+    <Box className={className}>
+      {!!title && title !== '' && (<Title>{title}</Title>)}
+      {!!subtitle && subtitle !== '' && (<SubTitle>{subtitle}</SubTitle>)}
     </Box>
   )
 }
