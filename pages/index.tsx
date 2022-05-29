@@ -5,6 +5,7 @@ import InsightsRow from "../components/InsightsRow";
 import DescriptionRow from "../components/DescriptionRow";
 import CenteredTitle from "../components/CenteredTitle";
 import CalculatorForm from "../components/CalculatorForm";
+import Showcase from "../components/Showcase";
 
 const HomePage = styled.div`
   background-color: #0d0d2b;
@@ -28,6 +29,20 @@ const FormSection = styled(Section)`
   padding-top: 6.25rem;
 `
 
+const ShowcaseSection = styled(Section)`
+  background: linear-gradient(180deg, #F8F9FB 0%, #FAFBFF 100%);
+  padding: 6.25rem 0;
+`
+
+const InverseColorCenteredTitle = styled(CenteredTitle)`
+  color: #0d0d2b;
+`
+
+const MarketingSection = styled(Section)`
+  padding: 6.25rem 0;
+  background-color: #2B076E;
+`
+
 export default function Home() {
   return (
     <HomePage>
@@ -40,9 +55,19 @@ export default function Home() {
         <DescriptionRow />
       </DescriptionSection>
       <FormSection>
-        <CenteredTitle />
+        <CenteredTitle
+          title="Check how much you can earn"
+          subtitle="Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet."
+        />
         <CalculatorForm />
       </FormSection>
+      <ShowcaseSection>
+        <InverseColorCenteredTitle title="Trade securely and market the high growth cryptocurrencies." />
+        <Showcase />
+      </ShowcaseSection>
+      <MarketingSection>
+        <CenteredTitle title="Market sentiments, portfolio, and run the infrastructure of your choice" />
+      </MarketingSection>
     </HomePage>
   );
 }

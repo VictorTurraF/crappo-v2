@@ -19,10 +19,10 @@ const DefaultInputAppearence = css`
 
 const Box = styled.div`
   max-width: 942px;
+  margin: 4rem auto 0;
   border-radius: 1rem;
   background-color: #fff;
   color: #0D0D2B;
-  margin: 4rem auto;
   overflow: hidden;
   filter: drop-shadow(0px 20px 200px rgba(57, 23, 119, 0.05));
 `
