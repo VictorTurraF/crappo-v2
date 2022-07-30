@@ -6,6 +6,7 @@ import ChartComponent from './Chart'
 
 const Box = styled(Container)`
   margin-top: 6.25rem;
+  margin-bottom: 6.25rem;
 `
 
 const MiniHero = styled(MiniHeroComponent)`

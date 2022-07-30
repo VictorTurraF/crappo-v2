@@ -1,8 +1,11 @@
 import React from 'react'
+import ChartHeader from './Chart/ChartHeader'
 
-function DetailedChart() {
+function DetailedChart({ className }: React.HTMLAttributes<HTMLDivElement>) {
   return (
-    <div>DetailedChart</div>
+    <div className={className}>
+      <ChartHeader />
+    </div>
   )
 }
 
