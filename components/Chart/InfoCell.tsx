@@ -17,7 +17,7 @@ export interface InfoCellProps extends React.HTMLAttributes<HTMLDivElement> {
 
 function InfoCell({ className = "", infoValue, infoTitle, ...rest }: InfoCellProps) {
   return (
-    <Box className={cx("info-value", className)} {...rest}>
+    <Box className={cx("info-box", className)} {...rest}>
       <InfoValue>{infoValue}</InfoValue>
       <InfoMeta>{infoTitle}</InfoMeta>
     </Box>
