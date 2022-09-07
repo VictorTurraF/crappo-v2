@@ -9,6 +9,8 @@ import Showcase from "../components/Showcase";
 import InvestSmart from "../components/InvestSmart";
 import DetailedStatistics from "../components/DetailedStatistics";
 import GrowYourProfit from "../components/GrowYourProfit";
+import NewletterForm from "../components/NewletterForm";
+import Footer from "../components/Footer/Footer";
 
 const HomePage = styled.div`
   background-color: #0d0d2b;
@@ -46,6 +48,12 @@ const MarketingSection = styled(Section)`
   background-color: #2B076E;
 `
 
+const FooterSection = styled(Section)`
+  padding: 5.5rem 0 0 0;
+  background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  min-height: unset;
+`
+
 export default function Home() {
   return (
     <HomePage>
@@ -74,6 +82,10 @@ export default function Home() {
         <DetailedStatistics />
         <GrowYourProfit />
       </MarketingSection>
+      <FooterSection>
+        <NewletterForm />
+        <Footer />
+      </FooterSection>
     </HomePage>
   );
 }
