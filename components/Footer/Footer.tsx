@@ -17,7 +17,6 @@ const FooterTag = styled.footer`
   flex-direction: column;
   gap: 2.5rem; 
   align-items: stretch;
-  background-color: #0D0D2B;
 `
 
 const LinksSection = styled(FooterContainer)`
@@ -58,7 +57,7 @@ function Footer() {
         </PaymentsColumn>
       </LinksSection>
       <FooterSection>
-        <Copyright>©2021 CRAPPO. All rights reserved</Copyright>
+        <Copyright>©{new Date().getFullYear()} CRAPPO. All rights reserved</Copyright>
         <SocialLinksList />
       </FooterSection>
     </FooterTag>

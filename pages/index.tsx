@@ -32,6 +32,16 @@ const DescriptionSection = styled(Section)`
 
 const FormSection = styled(Section)`
   padding-top: 6.25rem;
+  position: relative;
+`
+
+const FormBackground = styled.div`
+  position: absolute;
+  top: 454px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #F8F9FB;
 `
 
 const ShowcaseSection = styled(Section)`
@@ -48,10 +58,16 @@ const MarketingSection = styled(Section)`
   background-color: #2B076E;
 `
 
-const FooterSection = styled(Section)`
-  padding: 5.5rem 0 0 0;
+const NewsLetterSection = styled(Section)`
   background: linear-gradient(180deg, #2B076E 0%, #0D0D2B 100%);
+  height: auto;
   min-height: unset;
+  padding: 5.5rem 0;
+`
+
+const FooterSection = styled(Section)`
+  min-height: unset;
+  background-color: #0D0D2B;
 `
 
 export default function Home() {
@@ -66,6 +82,7 @@ export default function Home() {
         <DescriptionRow />
       </DescriptionSection>
       <FormSection>
+        <FormBackground />
         <CenteredTitle
           title="Check how much you can earn"
           subtitle="Let’s check your hash rate to see how much you will earn today, Exercitation veniam consequat sunt nostrud amet."
@@ -82,8 +99,10 @@ export default function Home() {
         <DetailedStatistics />
         <GrowYourProfit />
       </MarketingSection>
-      <FooterSection>
+      <NewsLetterSection>
         <NewletterForm />
+      </NewsLetterSection>
+      <FooterSection>
         <Footer />
       </FooterSection>
     </HomePage>
